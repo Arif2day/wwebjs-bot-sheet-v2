@@ -47,29 +47,29 @@ async function doOnReady(chats) {
             var number = findPropertyByPrefix(item,'whatsapp_');
 
             console.log((index+1)+' of '+(unprocessed.length));
-            if(chats.filter(e=> e.id._serialized==number).length!=0){
-                var format,type;
-                if(item.type_notif=='Notifikasi Tunggakan'){    
-                    if(item.last_due_date<formatDate(today)){
-                        //F_T2
-                        type = "Tunggakan lama"; 
-                        format = process.env.FORMAT_T2;                    
-                    }else{
-                        //F_T1
-                        type = "Tunggakan bulan lalu"; 
-                        format = process.env.FORMAT_T1;
-                    }
+            var format,type;
+            if(item.type_notif=='Notifikasi Tunggakan'){    
+                if(item.last_due_date<formatDate(today)){
+                    //F_T2
+                    type = "Tunggakan lama"; 
+                    format = process.env.FORMAT_T2;                    
                 }else{
-                    if(item.tgl_tempo==formatDate(today)){
-                        //F_H0
-                        type = "H-0"; 
-                        format = process.env.FORMAT_H0;
-                    }else{
-                        //F_H-2
-                        type = "H-2"; 
-                        format = process.env.FORMAT_HM2;
-                    }
+                    //F_T1
+                    type = "Tunggakan bulan lalu"; 
+                    format = process.env.FORMAT_T1;
                 }
+            }else{
+                if(item.tgl_tempo==formatDate(today)){
+                    //F_H0
+                    type = "H-0"; 
+                    format = process.env.FORMAT_H0;
+                }else{
+                    //F_H-2
+                    type = "H-2"; 
+                    format = process.env.FORMAT_HM2;
+                }
+            }
+            if(chats.filter(e=> e.id._serialized==number).length!=0){
                 item.enter = "\n";
                 var message = convertToInterpolationString(format,item);
 
