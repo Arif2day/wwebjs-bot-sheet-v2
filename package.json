@@ -1,0 +1,20 @@
+{
+  "name": "wwebjs-bot-sheet",
+  "version": "1.0.0",
+  "description": "Whatsapp bot with spreadsheet or excell as a datasource",
+  "main": "main.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arief2day@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
+    "dotenv": "^16.5.0",
+    "googleapis": "^148.0.0",
+    "qrcode-terminal": "^0.12.0",
+    "read-excel-file": "^5.8.7",
+    "whatsapp-web.js": "^1.27.0"
+  }
+}

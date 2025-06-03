@@ -1,0 +1,15 @@
+Format H-1,H-2
+"Kepada Pengurus Kelompok [Nama Kelompok], dengan hormat, kami ingin mengingatkan bahwa pembayaran untuk angsuran kelompok [Nama Kelompok] dengan total sebesar Rp [Jumlah] jatuh tempo pada tanggal [Tanggal Jatuh Tempo]. Mohon segera dilakukan pembayaran agar tidak ada kendala. Terima kasih atas perhatian dan kerjasamanya."
+
+Format H-0 
+"Selamat siang mengingatkan bahwa pembayaran kelompok spp..... Desa.... Sebesar Rp...... Hari ini batas akhir pembayaran angsuran. Mohon segera dilakukan pembayaran maksimal sampai dengan jam 23.59 wib
+Abaikan pesan ini apabila sudah melakukan pembayaran"
+
+Format tunggakan 
+"Selamat siang berdasarkan catatan pembukuan BUMDes Bersama Pangkalan Lada Makmur, kelompok spp ........ Desa...... Tagihan bulan lalu belum dilunasi, mohon segera selesaikan pembayaran"
+
+Format tunggakan sudah lewat beberapa bulan
+"Selamat siang berdasarkan catatan pembukuan BUMDes Bersama Pangkalan Lada Makmur kelompok spp...... Desa.... Memiliki tagihan sebesar Rp........ Sudah terlambat dari jatuh tempo seharusnya bulan..... Tahun...., mohon segera selesaikan pembayaran"
+
+Autoreply 
+"Terimakasih, ini merupakan pesan otomatis segera lakukan konfirmasi dengan petugas BUMDes Bersama Pangkalan Lada Makmur"
