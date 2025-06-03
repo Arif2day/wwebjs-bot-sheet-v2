@@ -2,7 +2,7 @@
 setlocal EnableDelayedExpansion
 
 :: Define the search prefix and target env file
-set "prefix=wweb-bot-sheet-v2"
+set "prefix=wweb-bot-sheet"
 set "envFile=.env"
 set "key=GKFP"
 set "tempFile=%envFile%.tmp"
