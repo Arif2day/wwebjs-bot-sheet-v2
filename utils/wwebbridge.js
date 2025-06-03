@@ -73,7 +73,7 @@ async function doOnReady(chats) {
                 item.enter = "\n";
                 var message = convertToInterpolationString(format,item);
 
-                // await sendMsg(number,message);
+                await sendMsg(number,message);
                 // log file
                 logNotificationHistory(`${item.type_notif} nasabah ${item.kelompok} (${type}) dikirim ke ${item.send_to} - ${number}`);
                 console.log(`[Notification] - ${item.type_notif} nasabah ${item.kelompok} (${type}) dikirim ke ${item.send_to} - ${number}`);
