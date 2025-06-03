@@ -18,6 +18,7 @@ const client = new Client({
 // run (only once) when the client is ready
 client.once('ready',async ()=>{
     console.log('[Whatsapp Client] - is ready!');  
+    console.log('[Whatsapp Client] - chat history sync in progress !');  
     const chats = await  client.getChats();
 
     doOnReady(chats);
