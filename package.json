@@ -1,5 +1,5 @@
 {
-  "name": "wwebjs-bot-sheet",
+  "name": "wwebjs-bot-sheet-v2",
   "version": "1.0.0",
   "description": "Whatsapp bot with spreadsheet or excell as a datasource",
   "main": "main.js",
